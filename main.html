@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign-Up Details</h1>
+    <p>Fill up the below details to create a new account.</p>
+    <form>Below all fields are Mandatory(*)
+        <fieldset>
+            <label for="first-name">Enter First Name: 
+                <input type="text" name="first-name" id="first-name" placeholder="First-Name" required>
+            </label>
+            <label for="last-name">Enter Last Name:
+                <input type="text" name="last-name" id="last-name" placeholder="Last-Name" required>
+            </label>
+            <label for="PhoneNumber">Enter Phone Number:
+                <input type="number" name="PhoneNumber" id="PhoneNumber" placeholder="Phone-Number" maxlength="10" pattern=[6-9]{10} required>
+            </label>          
+            <label for="Email">Enter Email Id:
+                <input type="email" name="Email" id="Email" placeholder="Email" required>
+            </label>
+            <label for="Password">Enter Password:
+                <input type="password" name="password" id="password" placeholder="Password" minlength="6" required>
+            </label>
+            <label for="Confirm-password">Confirm Password:
+                <input type="password" name="Confirm" id="Confirm" placeholder="Confirm-password" minlength="6" required>
+            </label>
+            <button>Signup</button>
+        </fieldset>
+    </form>
+</body>
+</html>
